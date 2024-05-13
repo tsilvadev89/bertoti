@@ -35,12 +35,15 @@ public class MainController {
                     performPredictiveMaintenance();
                     break;
                 case 4:
+                    viewEquipmentDetails();
+                    break;
+                case 5:
                     System.out.println("Encerrando o programa...");
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (choice != 4);
+        } while (choice != 5);
     }
 
     private void performPreventiveMaintenance() {
@@ -59,6 +62,10 @@ public class MainController {
         PredictiveMaintenance predictiveMaintenance = new PredictiveMaintenance();
         predictiveMaintenance.executeMaintenance();
         equipmentComposite.performMaintenance();
+    }
+
+    private void viewEquipmentDetails() {
+        equipmentView.displayEquipmentDetails(equipmentComposite);
     }
 
     private EquipmentComposite createEquipmentHierarchy() {
