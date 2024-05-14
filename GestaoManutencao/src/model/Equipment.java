@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Equipment implements Composite {
     private String name;
-    private List<Equipment> subEquipments;
+    private List<Composite> subEquipments;
 
     public Equipment(String name) {
         this.name = name;
@@ -16,23 +16,23 @@ public class Equipment implements Composite {
         return name;
     }
 
-    public void addComponent(Equipment equipment) {
+    public void addComponent(Composite equipment) {
         subEquipments.add(equipment);
     }
 
-    public void removeComponent(Equipment equipment) {
+    public void removeComponent(Composite equipment) {
         subEquipments.remove(equipment);
     }
 
     @Override
     public void performMaintenance() {
         System.out.println("Realizando manutenção no equipamento: " + name);
-        for (Equipment subEquipment : subEquipments) {
+        for (Composite subEquipment : subEquipments) {
             subEquipment.performMaintenance();
         }
     }
 
-    public List<Equipment> getSubEquipments() {
+    public List<Composite> getSubEquipments() {
         return subEquipments;
     }
 }

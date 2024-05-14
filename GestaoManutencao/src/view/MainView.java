@@ -15,7 +15,8 @@ public class MainView {
         System.out.println("1. Realizar Manutenção Preventiva");
         System.out.println("2. Realizar Manutenção Corretiva");
         System.out.println("3. Realizar Manutenção Preditiva");
-        System.out.println("4. Sair");
+        System.out.println("4. Visualizar Detalhes do Equipamento");
+        System.out.println("5. Sair");
     }
 
     public int getUserChoice() {
@@ -25,5 +26,9 @@ public class MainView {
 
     public void displayMessage(String message) {
         System.out.println(message);
+    }
+
+    public void displayExitMessage() {
+        System.out.println("Encerrando o programa...");
     }
 }

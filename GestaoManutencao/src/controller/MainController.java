@@ -1,17 +1,19 @@
 package controller;
 
-import model.Equipment;
 import model.EquipmentComposite;
 import model.PreventiveMaintenance;
 import model.CorrectiveMaintenance;
 import model.PredictiveMaintenance;
 import view.MainView;
 import view.EquipmentView;
+import model.Composite;
 
 public class MainController {
+
+    // Componentes principais do programa
     private MainView mainView;
     private EquipmentView equipmentView;
-    private EquipmentComposite equipmentComposite;
+    private Composite equipmentComposite;
 
     public MainController() {
         mainView = new MainView();
@@ -46,36 +48,36 @@ public class MainController {
         } while (choice != 5);
     }
 
+    // Realizar ações de manutenção com base na seleção
     private void performPreventiveMaintenance() {
         PreventiveMaintenance preventiveMaintenance = new PreventiveMaintenance();
         preventiveMaintenance.executeMaintenance();
-        equipmentComposite.performMaintenance();
     }
 
     private void performCorrectiveMaintenance() {
         CorrectiveMaintenance correctiveMaintenance = new CorrectiveMaintenance();
         correctiveMaintenance.executeMaintenance();
-        equipmentComposite.performMaintenance();
     }
 
     private void performPredictiveMaintenance() {
         PredictiveMaintenance predictiveMaintenance = new PredictiveMaintenance();
         predictiveMaintenance.executeMaintenance();
-        equipmentComposite.performMaintenance();
     }
 
+    // Exibir detalhes do equipamento
     private void viewEquipmentDetails() {
-        equipmentView.displayEquipmentDetails(equipmentComposite);
+        equipmentView.displayEquipmentDetails((EquipmentComposite) equipmentComposite);
     }
 
-    private EquipmentComposite createEquipmentHierarchy() {
-        EquipmentComposite root = new EquipmentComposite();
-        EquipmentComposite assemblyLine1 = new EquipmentComposite();
-        EquipmentComposite assemblyLine2 = new EquipmentComposite();
+    // Criar uma hierarquia de equipamentos de exemplo (substituir pela estrutura desejada)
+    private Composite createEquipmentHierarchy() {
+        EquipmentComposite root = new EquipmentComposite("Root");
+        EquipmentComposite assemblyLine1 = new EquipmentComposite("Assembly Line 1");
+        EquipmentComposite assemblyLine2 = new EquipmentComposite("Assembly Line 2");
 
-        Equipment motor = new Equipment("Motor");
-        Equipment compressor = new Equipment("Compressor");
-        Equipment belt = new Equipment("Belt");
+        model.Equipment motor = new model.Equipment("Motor");
+        model.Equipment compressor = new model.Equipment("Compressor");
+        model.Equipment belt = new model.Equipment("Belt");
 
         assemblyLine1.addComponent(motor);
         assemblyLine1.addComponent(compressor);
