@@ -1,0 +1,68 @@
+#CODIGOS DO BERBOT
+
+
+pip install pytelegrambotapi pandas
+
+pip install beautifulsoup4
+
+import telebot
+import requests
+from bs4 import BeautifulSoup
+
+# Token do seu bot do Telegram
+TOKEN = '-'
+
+bot = telebot.TeleBot(TOKEN)
+
+# Função para responder à pergunta sobre a inflação em um ano específico
+@bot.message_handler(func=lambda message: True)
+def reply_inflacao(message):
+    try:
+        # Extrair o ano informado na mensagem
+        ano_informado = int(message.text)
+
+        # Fazer uma solicitação HTTP para o site
+        url = "https://www.dadosmundiais.com/america/brasil/inflacao.php"
+        response = requests.get(url)
+
+        # Verificar se a solicitação foi bem-sucedida
+        if response.status_code == 200:
+            # Analisar o HTML da página
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Encontrar a tabela com os dados de inflação
+            table = soup.find('table')
+
+            # Encontrar todas as linhas da tabela
+            rows = table.find_all('tr')
+
+            # Inicializar variáveis para armazenar os valores de inflação
+            inflacao_ano = None
+
+            # Iterar pelas linhas da tabela
+            for row in rows:
+                # Encontrar as colunas da linha
+                cols = row.find_all('td')
+                if len(cols) >= 2:
+                    # Extrair o ano e a inflação
+                    ano = int(cols[0].text.strip())
+                    inflacao = float(cols[1].text.strip().replace('%', '').replace(',', '.'))
+
+                    # Verificar se o ano corresponde ao ano informado
+                    if ano == ano_informado:
+                        inflacao_ano = inflacao
+                        break
+
+            if inflacao_ano is not None:
+                # Responder com a porcentagem de inflação no ano especificado
+                resposta = f"A inflação no Brasil em {ano_informado} foi de {inflacao_ano}%."
+                bot.reply_to(message, resposta)
+            else:
+                bot.reply_to(message, f"Ano não encontrado.")
+        else:
+            bot.reply_to(message, f"Ocorreu um erro ao acessar o site.")
+    except Exception as e:
+        bot.reply_to(message, f"Ocorreu um erro: {str(e)}")
+
+if __name__ == "__main__":
+    bot.polling()
