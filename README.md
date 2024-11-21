@@ -18,13 +18,11 @@ Quando os usuários conhecem o status atual do sistema, eles aprendem o resultad
 
 ACERTO: Conseguimos facilmente nos localizar e entender qual o conteúdo que vem em seguida.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/9acade37-0e8d-4622-9cfd-c31770c3df29)
-
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/20422c84-0728-4dbb-978e-43fbf50bd636)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/1_Visibilidade%20do%20status%20do%20sistema.jpg)
 
 ERRO: Página confusa e pouco intuitiva no site do siga
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/ec4d1134-b24a-490c-b2ce-61948c589cdc)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/1_Visibilidade%20do%20status%20do%20sistema%20ERRO.jpg)
 
 
 
@@ -43,12 +41,11 @@ A pesquisa do usuário descobrirá a terminologia familiar de seus usuários, be
 
 ACERTO: Símbolos universais e intuitivos que facilitam o entendimento das ações.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/53ed5350-11fb-4171-8b92-725d079babb8)
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/7c2de153-57e7-4c9f-8237-58d42e912416)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/2_Correspond%C3%AAnciaEntreMundoReal.jpg)
 
 ERRO: A falta de símbolos para o facilitamento da identificação.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/067e09e5-ecb8-47a7-bf8c-c626e38a4eec)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/2_Correspond%C3%AAnciaEntreMundoRealERRO.jpg)
 
 
 # Nº 3: Controle e liberdade do usuário
@@ -63,9 +60,9 @@ Os espaços digitais precisam de saídas de emergência rápidas, tal como os es
 Suporte para desfazer e refazer.
 Mostre uma maneira clara de sair da interação atual, como um botão Cancelar.
 Certifique-se de que a saída esteja claramente identificada e detectável.
+Exemplo uso de ações criticas no GITHUB
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/3104840e-fe26-4237-82bc-d2a370a2cf3f)
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/77370c91-9628-4148-a34a-9dc9cc798875)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/3_ControleLiberdadeUsu%C3%A1rio.jpg)
 
 
 
@@ -82,9 +79,7 @@ Siga as convenções estabelecidas do setor (consistência externa).
 
 ACERTO: Interfaces com padrões visuais em diferentes ferramentas.
  
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/33abc573-656a-4315-b509-0a2667326216)
-
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/7b930058-e657-4631-ac1b-62a021bc0cb8)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/4_Consist%C3%AAnciaPadr%C3%B5es.jpg)
 
 
 # Nº 5: Prevenção de erros
@@ -102,8 +97,7 @@ Evite erros removendo sobrecargas de memória, suportando desfazer e avisando se
 
 ACERTO: Mensagens que possibilitam que o usuário evite de tomar uma ação errônea.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/cfe67daa-3e3b-41cd-9c32-7186b989415c)
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/8765b4d8-6e8c-432f-aa82-f12d5107e654)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/5_Preven%C3%A7%C3%A3oErros.jpg)
 
 
 
@@ -120,7 +114,7 @@ Reduza as informações que os usuários precisam lembrar.
 
 ACERTO: Fácil reconhecimento de ações em um site de vendas, como onde procurar o produto, carrinho, permite que o usuário reconheça locais.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/27f30a02-7b4d-4ac0-9754-6b26364b07ce)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/6_ReconhecimentoEmVezLembran%C3%A7a.jpg)
 
 
 
@@ -135,11 +129,11 @@ Forneça personalização adaptando o conteúdo e a funcionalidade para usuário
 Permita a personalização, para que os usuários possam fazer seleções sobre como desejam que o produto funcione.
 
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/ae8d8ed9-16ea-471c-9342-598d581b3e2d)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/7_FlexibilidadeEficienciaUso.jpg)
 
 ERRO: Tamanho inadequado do site do siga em dispositivos móveis
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/c286442d-06e8-4eb1-a18a-900afd349cb3)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/7_FlexibilidadeEficienciaUsoERRO.jpg)
 
 
  
@@ -153,7 +147,7 @@ Mantenha o conteúdo e o design visual da IU focados no essencial.
 Não deixe que elementos desnecessários distraiam os usuários das informações que eles realmente precisam.
 Priorize o conteúdo e os recursos para apoiar os objetivos principais.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/740625db-ef04-4ef7-9bca-85c429199b22)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/8_DesignEsteticoMinimalista.jpg)
 
 
 
@@ -168,8 +162,7 @@ Use recursos visuais tradicionais de mensagens de erro, como texto em negrito e 
 Diga aos usuários o que deu errado em uma linguagem que eles entenderão – evite jargões técnicos.
 Ofereça aos usuários uma solução, como um atalho que pode resolver o erro imediatamente.
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/fe920ea4-1479-46cb-9e9b-f809337918a5)
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/4aff3da9-56db-4bf3-842c-2374f5dd6532)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/9_AjudeUsuriosReconhecerErros.jpg)
 
 
 
@@ -188,4 +181,4 @@ Liste as etapas concretas a serem executadas.
 ACERTO: Por exemplo, no formulário de pagamento do Walmart tem um campo pra preencher o código de segurança do cartão. Como não é algo muito óbvio, tem uma imagem próxima ao campo mostrando onde fica o código de segurança do cartão. Essa é uma boa forma de fazer uma documentação feliz.
 
 
-![image](https://github.com/julianopradoo/Bertoti/assets/125655127/c5fb6198-b256-42ab-b227-00cabdcddc73)
+![image](https://github.com/tsilvadev89/bertoti/blob/main/IHC/img/10_AjudaDocumentacao.jpg)
